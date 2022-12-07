@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+  </head>
+  <body>
+    <h1>Cargar Productos</h1>
+    <form id="productForm">
+      <input id="nameInput" type="text" placeholder="Nombre producto" /><br />
+      <input
+        id="priceInput"
+        type="number"
+        placeholder="Precio producto"
+      /><br />
+      <input id="thumbnail" type="text" placeholder="imagen producto" /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <h1>Lista productos</h1>
+    <ul id="productPool"></ul>
+
+    <form id="messageForm">
+      <input id="emailInput" type="email" placeholder="Email de usuario" />
+      <input id="messageInput" type="text" placeholder="Mensaje" />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <ul id="messagesPool"></ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./client.socket.js"></script>
+  </body>
+</html>
